@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-lectures-notes/static/css/main.7acaea2f.css",
+    "main.css": "/react-lectures-notes/static/css/main.48517ac5.css",
     "main.js": "/react-lectures-notes/static/js/main.07d3183d.js",
     "index.html": "/react-lectures-notes/index.html",
-    "main.7acaea2f.css.map": "/react-lectures-notes/static/css/main.7acaea2f.css.map",
+    "main.48517ac5.css.map": "/react-lectures-notes/static/css/main.48517ac5.css.map",
     "main.07d3183d.js.map": "/react-lectures-notes/static/js/main.07d3183d.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
+    "static/css/main.48517ac5.css",
     "static/js/main.07d3183d.js"
   ]
 }
