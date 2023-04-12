@@ -1,5 +1,5 @@
-import { RecipeList } from "./01-components-styles/RecipeList";
-import recipes from "./01-components-styles/recipes.json";
+import { RecipeList } from './01-components-styles/Recipes/RecipeList';
+import recipes from './01-components-styles/Recipes/recipes.json';
 
 export const App = () => {
   return (
