@@ -6,7 +6,9 @@ import { Layout } from '../Layout/Layout';
 export const App = () => {
   return (
     <Layout>
+      <div>Recipe Form</div>
       <RecipeList items={recipes} />
+      <div>Image modal</div>
       <GlobalStyle />
     </Layout>
   );

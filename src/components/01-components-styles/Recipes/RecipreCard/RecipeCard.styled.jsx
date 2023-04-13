@@ -4,6 +4,10 @@ import { RecipeDifficulty } from 'components/01-components-styles/constants';
 export const Name = styled.h2`
   margin-top: 8px;
   margin-bottom: 12px;
+
+  :hover {
+    color: ${p => p.theme.colors.accent};
+  }
 `;
 
 export const RecipeInfo = styled.ul`
