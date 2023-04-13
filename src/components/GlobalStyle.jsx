@@ -1,6 +1,8 @@
-@import-normalize; /* bring in normalize.css styles */
+import { createGlobalStyle } from 'styled-components';
+import 'modern-normalize';
 
-body {
+export const GlobalStyle = createGlobalStyle`
+  body {
   margin: 0;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -38,3 +40,5 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+`;
