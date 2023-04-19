@@ -1,19 +1,46 @@
 import styled from 'styled-components';
-import { RecipeDifficulty } from 'components/01-components-styles/constants';
+import { RecipeDifficulty } from 'components/constants';
+
+// export const Card = styled.div`
+//   background-color: tomato;
+//   border-radius: 20px;
+//   border: 1 solid ${p => p.theme.colors.accent};
+// `;
+
+export const Container = styled.div`
+  position: relative;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+`;
 
 export const Name = styled.h2`
-  margin-top: 8px;
-  margin-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
 
   :hover {
     color: ${p => p.theme.colors.accent};
   }
 `;
 
+export const Image = styled.img`
+  display: block;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+`;
+
 export const RecipeInfo = styled.ul`
   display: flex;
+  justify-content: space-around;
   gap: 4px;
   margin-bottom: 8px;
+  padding: 4px;
 `;
 
 export const InfoBlock = styled.li`
@@ -28,6 +55,7 @@ export const InfoBlock = styled.li`
 
 export const BadgeList = styled.ul`
   display: flex;
+  justify-content: center;
   gap: 8px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -57,6 +85,14 @@ export const Badge = styled.li`
   color: ${p => {
     return p.active ? p.theme.colors.white : p.theme.colors.black;
   }};
+`;
+
+export const Actions = styled.div`
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 4px;
 `;
 
 // export const Badge = styled.li`
