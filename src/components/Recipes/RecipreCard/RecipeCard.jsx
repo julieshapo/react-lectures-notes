@@ -17,6 +17,7 @@ import {
   Actions,
 } from './RecipeCard.styled';
 import { RecipeDifficulty } from 'components/constants';
+import { RecipeModal } from '../RecipeModal/RecipeModal';
 
 export class RecipeCard extends Component {
   state = {
@@ -26,6 +27,12 @@ export class RecipeCard extends Component {
   setSelectedImg = () => {
     this.setState({
       selectedImg: this.props.item.image,
+    });
+  };
+
+  closeModal = () => {
+    this.setState({
+      selectedImg: null,
     });
   };
 
@@ -86,11 +93,12 @@ export class RecipeCard extends Component {
             <HiZoomIn />
           </button>
         </Actions>
-        {selectedImg && (
-          <div>
-            Image modal <p>{selectedImg}</p>
-          </div>
-        )}
+
+        <RecipeModal
+          isOpen={selectedImg !== null}
+          onClose={this.closeModal}
+          image={selectedImg}
+        ></RecipeModal>
       </Container>
     );
   }
